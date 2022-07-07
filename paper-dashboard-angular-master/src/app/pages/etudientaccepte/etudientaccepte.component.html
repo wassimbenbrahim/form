@@ -1,0 +1,58 @@
+<p>Liste des etudient accepté </p>
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-6" style="text-align:center;">
+        <h3>liste des étudients accepté</h3>
+      </div>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Search Here" [(ngModel)]="term">
+    </div>
+    <div class="row">
+      <div class="col-md-50">
+        <br /><br />
+        <div class="table-responsive">
+          <table id="mytable" class="table table-bordred table-striped">
+            <thead>
+            <th>id</th>
+            <th>nom</th>
+            <th>prénom</th>
+            <th>datenaissance</th>
+            <th>lieu_de_naissance </th>
+            <th>pays</th>
+            <th>adresse</th>
+            <th>téléphone</th>
+            <th>email</th>
+  
+            </thead>
+            <tbody>
+            <tr *ngFor="let f of listetud | filter:term">
+            <td>{{f.id}}</td>
+              <td>{{f.nom}}</td>
+              <td>{{f.prenom}}</td>
+              <td>{{f.datenaissance}}</td>
+              <td>{{f.lieu_de_naissance}}</td>
+              <td>{{f.pays}}</td>
+              <td>{{f.adresse}}</td>
+              <td>{{f.telephone}}</td>
+              <td>{{f.email}}</td>
+              
+  
+  
+  
+  
+  
+  
+  
+  
+              
+             </tr>
+  
+  
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>

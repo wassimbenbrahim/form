@@ -1,9 +1,11 @@
+
 <div class="container">
   <div class="row">
     <div class="col-md-6" style="text-align:center;">
       <h3>liste des étudients</h3>
     </div>
   </div>
+
   <div class="form-group">
     <input type="text" class="form-control" placeholder="Search Here" [(ngModel)]="term">
   </div>
@@ -25,7 +27,11 @@
 
           </thead>
           <tbody>
+
           <tr *ngFor="let f of listetud | filter:term">
+
+            
+
           <td>{{f.id}}</td>
             <td>{{f.nom}}</td>
             <td>{{f.prenom}}</td>
@@ -35,8 +41,8 @@
             <td>{{f.adresse}}</td>
             <td>{{f.telephone}}</td>
             <td>{{f.email}}</td>
-            <button (click)="delete(f.id)" type="button" class="btn btn-primary">refusé</button>
-            <button (click)="sendinvit(f.id)" type="button" class="btn btn-primary">Accepté</button>
+            <button (click)="delete(f.id)" type="button" class="btn btn-primary" >refusé</button>
+            <button  (click)="sendinvit(f.id)" type="button" class="btn btn-primary" (click)="update(f.id)">Accepté</button>
 
 
 
@@ -44,11 +50,9 @@
 
 
 
-
-
+        
             
            </tr>
-
 
           </tbody>
         </table>

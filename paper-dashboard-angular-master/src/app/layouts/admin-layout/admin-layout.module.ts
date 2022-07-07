@@ -14,9 +14,10 @@ import { MapsComponent }            from '../../pages/maps/maps.component';
 import { NotificationsComponent }   from '../../pages/notifications/notifications.component';
 import { UpgradeComponent }         from '../../pages/upgrade/upgrade.component';
 import { InscriptionComponent }         from '../../pages/inscription/inscription.component';
-
+import {EtudientaccepteComponent} from '../../pages/etudientaccepte/etudientaccepte.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {Ng2SearchPipeModule} from 'ng2-search-filter';
+import { ListeattenteComponent } from '../../pages/listeattente/listeattente.component';
 
 @NgModule({
     imports: [
@@ -36,6 +37,8 @@ import {Ng2SearchPipeModule} from 'ng2-search-filter';
     MapsComponent,
     NotificationsComponent,
     InscriptionComponent,
+    EtudientaccepteComponent,
+    ListeattenteComponent,
   ]
 })
 

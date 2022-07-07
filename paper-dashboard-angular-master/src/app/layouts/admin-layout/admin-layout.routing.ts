@@ -9,6 +9,8 @@ import { MapsComponent } from '../../pages/maps/maps.component';
 import { NotificationsComponent } from '../../pages/notifications/notifications.component';
 import { UpgradeComponent } from '../../pages/upgrade/upgrade.component';
 import {InscriptionComponent} from '../../pages/inscription/inscription.component';
+import { EtudientaccepteComponent } from '../../pages/etudientaccepte/etudientaccepte.component';
+import { ListeattenteComponent } from '../../pages/listeattente/listeattente.component';
 
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard',      component: DashboardComponent },
@@ -19,5 +21,9 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'maps',           component: MapsComponent },
     { path: 'notifications',  component: NotificationsComponent },
     { path: 'upgrade',        component: UpgradeComponent },
-  { path: 'inscription',        component: InscriptionComponent }
+  { path: 'inscription',        component: InscriptionComponent },
+  { path: 'etudientaccepte',        component: EtudientaccepteComponent },
+  { path: 'listeattente',        component: ListeattenteComponent }
+
+
 ];

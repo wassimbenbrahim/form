@@ -11,7 +11,7 @@ import {Inscription} from '../../models/Inscription';
 export class InscriptionComponent implements OnInit {
   listetud: Inscription[];
   term: any;
-  
+ 
   constructor(private router: Router, private _service: InscriptionService ) { }
 
   ngOnInit(): void {
@@ -19,6 +19,7 @@ export class InscriptionComponent implements OnInit {
       console.log(res);
       this.listetud = res;
     });
+    
   }
   delete(id: number) {
     this._service.deleteetudById(id).subscribe(data => { console.log(data); });
@@ -29,5 +30,9 @@ export class InscriptionComponent implements OnInit {
   }
 
 
-  
+  update(id: number) {
+    this._service.updateComplaint(id).subscribe(data => { console.log(data); });
+  }
+
+
 }

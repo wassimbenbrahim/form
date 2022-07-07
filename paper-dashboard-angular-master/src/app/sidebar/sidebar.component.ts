@@ -12,6 +12,9 @@ export const ROUTES: RouteInfo[] = [
     
   
   { path: '/inscription',       title: 'inscription',    icon:'nc-tile-56',  class: ''},
+  { path: '/etudientaccepte',       title: 'etudientaccepte',    icon:'nc-tile-56',  class: ''},
+  { path: '/listeattente',       title: 'listeattente',    icon:'nc-tile-56',  class: ''},
+
 ];
 
 @Component({
